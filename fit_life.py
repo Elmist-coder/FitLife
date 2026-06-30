@@ -1,7 +1,6 @@
-    #Приветствие и сбор данных от клиента
 print("Добро пожаловать в Fit Life!")
 print("=" * 40)
-
+#Приветствие и сбор данных от клиента
 user_name = input("Ваше имя? ")
 user_age = int(input("Ваш возраст? "))
 weight_kg = float(input("Ваш вес в кг? "))
@@ -29,6 +28,7 @@ def main():
     print(f"Рост: {height_m} м")
     print(f"ИМТ: {bmi_result:.1f}")
     print(f"Норма воды: {needed_water} мл в день")
+
 
 if __name__ == "__main__":
     main()
