@@ -1,14 +1,15 @@
 def welcome():
-    # Приветствие и сбор данных от клиента
+    """Выводит приветствие"""
     print("Добро пожаловать в Fit Life!")
     print("=" * 40)
 
 
     user_name = input("Ваше имя? ")
-    return user_name
+    return user_name.strip()
 
 
 def user_data():
+    """Запрос возраста, веса и роста"""
     user_age = int(input("Ваш возраст? "))
     weight_kg = float(input("Ваш вес в кг? "))
     height_m = float(input("Ваш рост в метрах, через точку? "))
@@ -16,17 +17,18 @@ def user_data():
 
 
 def calculate_bmi(weight_kg: float, height_m: float) -> float:
-    # Расчёт индекса массы тела уточнил у ИИ
+    """Расчёт индекса массы тела """
     return weight_kg / (height_m ** 2)
 
 
 def calculate_water_ml(weight_kg: float) -> float:
-    # Расчёт нормы воды в мл уточнил у ИИ
+    """Рассчёт нормы воды"""
     result = (weight_kg * 30) / 1000
     return result
 
 
 def main():
+    """Основная функция программы: приветствие, сбор данных и расчёт ИМТ"""
     user_name = welcome()
     user_age, weight_kg, height_m = user_data
 
