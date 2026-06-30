@@ -28,9 +28,7 @@ def main():
     print(f"Вес: {weight_kg} кг")
     print(f"Рост: {height_m} м")
     print(f"ИМТ: {bmi_result:.1f}")
-    print(f"Норма воды: {needed_water:.0f} мл в день")
-
-
+    print(f"Норма воды: {needed_water} мл в день")
 
 if __name__ == "__main__":
     main()
