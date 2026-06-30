@@ -17,7 +17,7 @@ def user_data():
 
 
 def calculate_bmi(weight_kg: float, height_m: float) -> float:
-    """Расчёт индекса массы тела """
+    """Расчёт индекса массы тела"""
     return weight_kg / (height_m ** 2)
 
 
