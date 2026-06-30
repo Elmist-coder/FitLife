@@ -2,7 +2,8 @@ def welcome():
     """Выводит приветствие и возвращает имя пользователя."""
     print("Добро пожаловать в Fit Life!")
     print("=" * 40)
-    return input("Ваше имя?: ").strip()
+    user_name = input("Ваше имя?: ")
+    return user_name
 
 
 def user_data():
@@ -43,4 +44,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
