@@ -3,7 +3,7 @@ def welcome():
     print("Добро пожаловать в Fit Life!")
     print("=" * 40)
     user_name = input("Ваше имя?: ")
-    return user_name
+    return user_name.strip()
 
 
 def user_data():
@@ -28,7 +28,7 @@ def calculate_water_ml(weight_kg: float) -> float:
 def main():
     """Основная функция программы: приветствие, сбор данных и расчёт ИМТ"""
     user_name = welcome()
-    user_age, weight_kg, height_m = user_data
+    user_age, weight_kg, height_m = user_data()
     bmi_result = calculate_bmi(weight_kg, height_m)
     needed_water = calculate_water_ml(weight_kg)
     print("=" * 40)
