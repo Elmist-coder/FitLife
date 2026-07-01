@@ -1,11 +1,8 @@
-"""Модуль фитнес-трекера Fit Life."""
-
 def welcome():
     """Выводит приветствие и возвращает имя пользователя."""
-    print("Добро пожаловать в Fit Life!")
-    print("=" * 40)
-    user_name = input("Ваше имя?: ")
-    return user_name.strip()
+    user_name = input("Ваше имя? ")
+    print(f"Добро пожаловать в Fit Life, {user_name}!")
+    return user_name
 
 
 def user_data():
