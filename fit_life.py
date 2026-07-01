@@ -2,8 +2,8 @@ def welcome():
     """Выводит приветствие и возвращает имя пользователя."""
     print("Добро пожаловать в Fit Life!")
     print("=" * 40)
-    user_name = input("Ваше имя?: ")
-    return user_name
+    return input("Ваше имя?: ")
+    
 
 
 def user_data():
@@ -21,8 +21,7 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
 
 def calculate_water_ml(weight_kg: float) -> float:
     """Рассчёт нормы воды"""
-    result = (weight_kg * 30) / 1000
-    return result
+    return (weight_kg * 30) / 1000
 
 
 def main():
