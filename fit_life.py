@@ -1,8 +1,12 @@
 def welcome():
     """Выводит приветствие и возвращает имя пользователя."""
+    print(f"Добро пожаловать в Fit Life! ")
+    print("=" * 40) 
     user_name = input("Ваше имя? ")
-    print(f"Добро пожаловать в Fit Life, {user_name}!")
     return user_name
+    
+
+    
 
 
 def user_data():
