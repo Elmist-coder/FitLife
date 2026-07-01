@@ -3,7 +3,6 @@ def welcome():
     print("Добро пожаловать в Fit Life!")
     print("=" * 40)
     return input("Ваше имя?: ")
-    
 
 
 def user_data():
