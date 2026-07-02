@@ -1,3 +1,9 @@
+import typing
+"""Константа расчёта воды """
+ML_KG: typing.Final = 30.0
+QUANTITY: typing.Final = 1000.0
+
+
 def welcome():
     """Выводит приветствие и возвращает имя пользователя."""
     print("Добро пожаловать в Fit Life!")
@@ -20,7 +26,7 @@ def calculate_bmi(weight_kg: float, height_m: float) -> float:
 
 def calculate_water_ml(weight_kg: float) -> float:
     """Рассчёт нормы воды"""
-    return (weight_kg * 30) / 1000
+    return (weight_kg * ML_KG) / QUANTITY
 
 
 def main():
