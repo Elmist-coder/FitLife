@@ -1,5 +1,5 @@
 import typing
-"""Константа расчёта воды """
+"""Константа расчёта воды"""
 ML_KG: typing.Final = 30.0
 QUANTITY: typing.Final = 1000.0
 
