@@ -1,8 +1,9 @@
 """Константа расчёта воды"""
 
-import typing
-ML_KG: typing.Final = 30.0
-QUANTITY: typing.Final = 1000.0
+from typing import final
+
+ML_KG: final = 30.0
+QUANTITY: final = 1000.0
 
 
 def welcome():
